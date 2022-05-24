@@ -1,0 +1,553 @@
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  background: #001821;
+  color: #fff;
+  line-height: 1.42;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+a{
+  color: inherit;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+ul li{
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  font-weight: normal;
+}
+
+p{
+  margin-top: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+body, html{
+ height: 100%;
+}
+
+.wrapper{
+  background: url(../img-offers-page/hero-elephant.jpg) center top no-repeat, url(../img-offers-page/2.jpg) center bottom no-repeat;
+}
+
+.wrapper{
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 100%;
+  min-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1140px;
+}
+
+
+.header{
+  padding-top: 28px;
+  margin-bottom: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__col{
+  display: flex;
+  align-items: center;
+}
+
+.header__col--align--right{
+  justify-content: flex-end;
+}
+
+.logo{
+  display: block;
+  margin-right: 80px;
+}
+
+.menu__list{
+  display: inline-block;
+}
+
+.menu__item{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 54px;
+}
+
+.menu__item:last-child{
+  margin-right: 0;
+}
+
+.menu__link{
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.contacts{
+  font-style: normal;
+  text-align: right;
+}
+.contacts__phone{
+  text-decoration: none;
+  font-size: 26px;
+  margin-bottom: 4px;
+
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown__link{
+  display:inline-block;
+}
+
+.dropdown:hover .dropdown__menu{
+  display: block;
+  opacity: 1;
+}
+
+.dropdown__menu:before{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #EDEDED;
+  top: -20px;
+  left: 100px;
+  right: 0;
+}
+
+.dropdown__menu{
+  position: absolute;
+  background: #EDEDED;
+  opacity: 0.8;
+  transition: opacity 0.7s;
+  width: 160px;
+  padding: 15px 19px;
+  border-radius: 9px;
+  top: 100%;
+  right: 0;
+  display: none;
+  margin-top: 10px;
+}
+
+.dropdown__item{
+  font-size: 13px;
+  color: #1E1F20;
+  text-align: right;
+}
+
+.dropdown__item--bold{
+  font-weight: bold;
+}
+
+
+
+.hello__title{
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 27px;
+  width: 50%;
+}
+
+.hello__subtitle{
+  font-size: 18px;
+  margin-bottom: 33px;
+  width: 50%;
+}
+
+.button{
+  background: #F5170E;
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px 40px;
+  display: inline-block;
+}
+
+.offers{
+  margin-bottom: 127px;
+  margin-top: 246px;
+}
+
+.offers__list{
+  display: flex;
+  justify-content: space-between;
+}
+.offers__title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 51px;
+}
+
+.offers__title::after{
+  content: url(../img-offers-page/flame.png);
+}
+
+.offers__item{
+  min-height: 450px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  width: calc(100% / 3 - 18px);
+}
+
+.offers__item:last-child{
+  margin-right: 0px;
+}
+
+.offers__header{
+  min-height: 144px;
+  margin-bottom: 33px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.offers__content{
+  padding: 0 26px 20px;
+}
+
+.offers__content__title{
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 21px;
+  margin-top: 33px;
+}
+
+.offers__features{
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers__features__item {
+  display: flex;
+  align-items: center;
+}
+
+.offers__features:last-child{
+ margin-right: 0;
+}
+
+.offers__feature__img{
+  width:26px;
+  height: 26px;
+  margin-right: 10px;
+}
+
+.offers__feature__text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #666;
+}
+
+.offers__feature__text{
+  margin-right: 28px;
+}
+
+
+.offers__text{
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #303030;
+margin-bottom: 25px;
+margin-top: 24px;
+}
+
+.button--light{
+  border: 1px solid #F5170E;
+  box-sizing: border-box;  
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #F5170E;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px 40px;
+  display: inline-block;
+}
+
+.button--light:hover{
+  background: #F5170E;
+  color:#fff
+}
+
+.news{
+  margin-bottom: 153px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__list{
+  display: flex;
+  justify-content: space-between;
+}
+.news__title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 51px;
+}
+
+.news__item{
+  position: relative;
+  overflow: hidden;
+  margin-right: 25px;
+  flex: 1;
+}
+
+.news__item:last-child{
+  margin-right: 0;
+}
+
+.news__cover{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.news__content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  padding: 26px 31px;
+  min-height: 95px;
+}
+
+.news__date{
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.news__subtitle{
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 4px;
+
+}
+
+.news__desc{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px; 
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 58px;
+}
+
+.pagination__display{
+  margin-right: 25px;
+}
+
+.pagination__list{
+  display: flex;
+  align-items: center;
+}
+
+.pagination__item{
+  text-align: center;
+}
+
+.paginator__item--active .pagination__link {
+  background: #fff;
+  color:#F5170E
+}
+
+.pagination__link{
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.about{
+  display: flex;
+  margin-bottom: 53px;
+}
+.about:before{
+  content: "";
+  width: 490px;
+  height: 505px;
+  background: url(../img-offers-page/gates.jpg) center center / cover  no-repeat;
+  display: block;
+}
+
+.about__desc{
+  background: url(../img-offers-page/mountains.jpg) no-repeat;
+  padding: 70px 81px;
+  max-width: 785px;
+  margin-top: 97px;
+  margin-left: -140px;
+}
+
+.about__title{
+  font-weight: bold;
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 37px;
+}
+
+.about__desc--text{
+  margin-bottom: 61px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.about__desc--text p{
+  margin-bottom: 20px;
+}
+
+.about__desc--text p:last-child{
+  margin-bottom: 0;
+}
+
+.footer{
+  position: relative;
+  height: 146px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__col{
+  display: flex;
+  align-items: center;
+}
+
+.footer__col--align--right{
+  align-items: flex-end;
+}
+
+.footer__logo{
+  display: block;
+  position: absolute;
+  top: 45px; 
+}
+
+.footer__menu__list{
+  display: inline-block;
+  position: absolute;
+  top: 59px;
+  left: 165px;
+}
+
+.footer__menu__item{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 54px;
+}
+
+.footer__menu__item:last-child{
+  margin-right: 0;
+}
+
+.footer__menu__link{
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer__contacts{
+  position: absolute;
+  top: 43px;
+  right: 0px;
+  font-style: normal;
+  text-align: right; 
+}
+
+.footer__contscts__desc{
+  font-size: 11px;
+  color: #9A9A9A;
+}
+
+.footer__contacts__phone{
+  text-decoration: none;
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+
+
+.socials{
+margin-right: 265px;
+}
+
+.socials__item{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.socials__item:last-child{
+  margin-right: 0;
+}
+
+
+.socials__link{
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat;
+}
+
+.socials__item--icon--telegram .socials__link{
+  background: url(../img-offers-page/css_sprites.png) -122px -10px;
+}
+
+.socials__item--icon--vk .socials__link{
+  background: url(../img-offers-page/css_sprites.png) -178px -10px;
+}
+
+.socials__item--icon--facebook .socials__link{
+  background: url(../img-offers-page/css_sprites.png) -10px -10px;
+}
+
+.socials__item--icon--instagram .socials__link{
+  background: url(../img-offers-page/css_sprites.png) -66px -10px;
+}
+
+.footer__content{
+  border-top: 4px solid; 
+  background: url(../img-offers-page/line.png);
+  margin-top: 53px;
+  width: 1142px;
+}
+
